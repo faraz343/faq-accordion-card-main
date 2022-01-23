@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!--  -->
+  <script>
+    var i;
+
+    function myfunction(i) {
+      var coll = document.getElementsByClassName("collapse");
+      var rotate = document.getElementsByClassName("im");
+      var content = coll[i].nextElementSibling;
+
+      if (content.style.display === "block") {
+        rotate[i].style.transform = "rotate(0deg)";
+        content.style.display = "none";
+        coll[i].style.fontWeight = "500";
+        coll[i].style.color = "#707070";
+      } else {
+        rotate[i].style.transform = "rotate(180deg)";
+        content.style.display = "block";
+        coll[i].style.color = "hsl(238, 29%, 16%)";
+        coll[i].style.fontWeight = "700";
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="inner1">
+      <img class="shimage" src="images\bg-pattern-desktop.svg" alt="">
+      <img class="boximage" src="images\illustration-box-desktop.svg" alt="">
+      <img class="bgimage" style="position: absolute;" src="images\illustration-woman-online-desktop.svg" alt="">
+    </div>
+    <div class="inner2">
+      <div class="heading">FAQ</div>
+      <button type="button" class="collapse" onclick="myfunction(0)"><span>How many team members can I invite?</span><img class="im" src="images\icon-arrow-down.svg" /></button>
+      <div class="content" style="display:none;">You can invite up to 2 additional users on the Free plan. There is no limit on
+        team members for the Premium plan.</div>
+      <br />
+      <hr /><br />
+      <button type="button" class="collapse" onclick="myfunction(1)"><span>What is the maximum file upload size?</span><img class="im" src="images\icon-arrow-down.svg" /></button>
+      <div class="content" style="display:none;">No more than 2GB. All files in your account must fit your allotted storage space.</div>
+      <br />
+      <hr /><br />
+      <button type="button" class="collapse" onclick="myfunction(2)"><span>How do I reset my password?</span><img class="im" src="images\icon-arrow-down.svg" /></button>
+      <div class="content" style="display:none;">Click “Forgot password” from the login page or “Change password” from your profile page.
+        A reset link will be emailed to you.</div>
+      <br />
+      <hr /><br />
+      <button type="button" class="collapse" onclick="myfunction(3)"><span>Can I cancel my subscription?</span><img class="im" src="images\icon-arrow-down.svg" /></button>
+      <div class="content" style="display:none;">Yes! Send us a message and we’ll process your request no questions asked.</div>
+      <br />
+      <hr /><br />
+      <button type="button" class="collapse" onclick="myfunction(4)"><span>Do you provide additional support?</span><img class="im" src="images\icon-arrow-down.svg" /></button>
+      <div class="content" style="display:none;">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
+      <br />
+      <hr /><br />
+    </div>
+
+</body>
+
+</html>

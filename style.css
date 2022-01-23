@@ -1,0 +1,170 @@
+html {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(273, 75%, 40%));
+  height: 100%;
+}
+
+.main {
+  background-color: White;
+  margin: auto auto;
+  width: 60%;
+  display: flex;
+  margin-top: 150px;
+  border: 20px;
+  border-radius: 30px;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 10px 20px -10px black;
+}
+
+.boximage {
+  position: absolute;
+  z-index: 3;
+  left: -120px;
+  top: 180px;
+}
+
+.bgimage {
+  left: 0;
+  top: 80px;
+  height: 300px;
+  width: 400px;
+  object-position: -70px 0;
+  z-index: 0;
+}
+
+.shimage {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  top: -50px;
+  left: -120px;
+}
+
+.inner2 {
+  width: 370px;
+  position: relative;
+  margin-left: auto;
+  margin-right: 40px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+button {
+  padding: 0;
+}
+
+hr {
+  margin: 0;
+  width: 90%;
+  background-color: #E8E8E8;
+  height: 2px;
+  border: none;
+  margin-top: 14px;
+}
+
+.collapse {
+  cursor: pointer;
+  background-color: White;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #707070;
+  font-size: 14px;
+}
+
+.content {
+  display: none;
+  width: 90%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #707070;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.im {
+  position: absolute;
+  right: 0;
+  margin-right: 10%;
+}
+
+@media screen and (max-width:1300px) {
+  .main {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .main {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .main {
+    width: 95%;
+    padding-top: 100px;
+    margin-top: 120px;
+  }
+
+  .inner2 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  hr {
+    width: 75%;
+    margin-left: 15%;
+    margin-right: 0;
+  }
+
+  .boximage {
+    height: 150px;
+    width: 150px;
+    top: -70px;
+    left: -190px;
+    margin: auto;
+    right: 0;
+  }
+
+  .bgimage {
+    height: 200px;
+    width: 300px;
+    left: 0;
+    right: 0;
+    top: -120px;
+    margin: auto;
+    object-position: 0;
+  }
+
+  .shimage {
+    height: 250px;
+    width: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -130px;
+  }
+
+  .collapse {
+    margin-left: 15%;
+  }
+
+  .content {
+    margin-left: 15%;
+    width: 70%;
+  }
+}
